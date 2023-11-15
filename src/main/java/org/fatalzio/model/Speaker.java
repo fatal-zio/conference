@@ -1,4 +1,4 @@
-package org.fatalzio.com.fatalzio.model;
+package org.fatalzio.model;
 
 public class Speaker {
     private String firstName;
