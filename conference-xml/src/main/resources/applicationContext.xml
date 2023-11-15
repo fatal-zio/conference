@@ -12,8 +12,11 @@
     </bean>
 -->
     <!--Constructor injection example-->
-    <bean name="speakerService" class="org.fatalzio.service.SpeakerServiceImpl">
+    <!--<bean name="speakerService" class="org.fatalzio.service.SpeakerServiceImpl">
         <constructor-arg index="0" ref="speakerRepository"/>
-    </bean>
+    </bean>-->
+
+    <!--Autowire example, can be done byName or byType-->
+    <bean name="speakerService" class="org.fatalzio.service.SpeakerServiceImpl" autowire="byName" />
 
 </beans>
